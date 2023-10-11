@@ -1,0 +1,133 @@
+
+html {
+    scroll-behavior: smooth;
+  }
+  
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 5px;
+    width:100%;
+    box-sizing:border-box;
+  }
+  
+  .logo {
+    max-width: 100px;
+  }
+  
+  .nav-links {
+    display:flex;
+    gap:47px;
+  }
+  .nav-links a {
+    color: #303030;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-decoration: none;
+  }
+  
+  #projectsnav, #contactnav {
+    color: #727272;
+  }
+
+  .nav-links a:hover {
+    color: coral;
+  }
+  
+  .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .container {
+    width: 1084px;
+    height: auto;
+    position: absolute;
+    left:20px;
+    right:20px;
+    margin-left:auto;
+    margin-right:auto;
+    overflow:auto;
+    max-width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px; 
+  }
+  
+  #home {
+    flex-direction: row-reverse;
+  }
+
+  #projects {
+    align-items: flex-start;
+    align-content: flex-start;
+  }
+
+  .introbox {
+    width: 700px;
+    height: 500px;
+    background-color: lightcoral;
+    border-radius: 24px;
+    background-image: url('assets/introbg.svg');
+  }
+
+  .text {
+    width: 75%;
+    height: auto;
+    padding:58px;
+    flex-shrink: 0;
+    text-align: left;
+  }
+
+  .text h1 {
+    color: #303030;
+    font-family: Poppins;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0px;
+  }
+
+  .photobox {
+    width: 364px;
+    height: 500px;
+    background-color: lightcoral;
+    text-align: center;
+    border-radius: 24px;
+    background-image: url('assets/profilepic2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .portfolioitem {
+    width: 532px;
+    height: 512px;
+    flex-shrink: 0;
+    background-color: lightcoral;
+    text-align: center;
+    border-radius: 24px;
+  }
+
+  .contact {
+    width: 1084px;
+    height: 339px;
+    background-image: url('assets/introbg.svg');
+    background-size: cover;
+    background-position:bottom;
+    text-align: center;
+    border-radius: 24px;
+  }
