@@ -63,7 +63,8 @@ body {
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    gap: 20px; 
+    gap: 20px;
+    padding-bottom:20px;
   }
   
   #home {
@@ -81,6 +82,9 @@ body {
     background-color: lightcoral;
     border-radius: 24px;
     background-image: url('assets/introbg.svg');
+    display:flex;
+    flex-direction:column;
+    justify-content: space-between;
   }
 
   .text {
@@ -101,6 +105,36 @@ body {
     margin: 0px;
   }
 
+  .contact-container {
+    display:flex;
+    width: 75%;
+    align-items: center;
+    justify-content: start;
+    margin: 58px;
+    gap:20px;
+  }
+
+  .emailbutton {
+    height: 50px;
+    width: auto;
+    display: inline-flex;
+    padding-left: 54px;
+    padding-right: 54px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 24px;
+    background: #000;
+
+    text-decoration:none;
+    color: #FFF;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+  }
+
   .photobox {
     width: 364px;
     height: 500px;
@@ -117,14 +151,19 @@ body {
     width: 532px;
     height: 512px;
     flex-shrink: 0;
-    background-color: lightcoral;
     text-align: center;
     border-radius: 24px;
+    background-size:contain;
+  }
+
+  #mooni {
+    background-image:url('assets/mooni.png');
+
   }
 
   .contact {
     width: 1084px;
-    height: 339px;
+    height: 450px;
     background-image: url('assets/introbg.svg');
     background-size: cover;
     background-position:bottom;
