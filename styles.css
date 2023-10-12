@@ -170,6 +170,22 @@ body {
     background-image:url('assets/chachamatcha.png');
   }
 
+  #venmo {
+    background-image:url('assets/venmocasestudy.png');
+  }
+
+  #ratatouille {
+    background-image:url('assets/ratatouille.png');
+  }
+
+  #smokesignal {
+    background-image:url('assets/smokesignal.png');
+  }
+
+  #viewmore {
+    background-image:url('assets/viewmore.png')
+  }
+
   .contact {
     width: 1084px;
     height: 450px;
