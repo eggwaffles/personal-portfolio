@@ -7,6 +7,45 @@ body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
   }
+
+  h1 {
+    color: #303030;
+    font-family: Poppins;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0px;
+  }
+
+h2 {
+    color: #303030;
+    font-family: Poppins;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin: 0px;
+  }
+
+h3 {
+    color: #303030;
+    font-family: Poppins;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0px;
+}
+
+p {
+    color: #303030;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
   
   .navbar {
     display: flex;
@@ -92,54 +131,59 @@ body {
   .text {
     width: 75%;
     height: auto;
-    padding:58px;
+    padding-top:58px;
+    padding-left:58px;
     flex-shrink: 0;
     text-align: left;
   }
 
-  .text h1 {
-    color: #303030;
-    font-family: Poppins;
-    font-size: 44px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    margin: 0px;
+  #name {
     opacity: 0;
     animation: leFadeIn 1s forwards 2.3s;
   }
 
-  .contact-container {
+  .bottom-container {
     display:flex;
     width: 75%;
-    align-items: center;
+    align-content: center;
     justify-content: start;
     margin: 58px;
-    gap:20px;
+    gap: 20px;
   }
 
   .emailbutton {
-    height: 50px;
+    height: 48px;
     width: auto;
     display: inline-flex;
     padding-left: 54px;
     padding-right: 54px;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     gap: 10px;
     border-radius: 24px;
     background: #000;
 
     text-decoration:none;
     color: #FFF;
-    font-size: 12px;
+    font-size: 14px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
   }
 
   .emailbutton:hover {
-    background: #303030;
+    background: #4a4a4a;
+  }
+
+  .rollover {
+    display:none;
+  }
+
+  .contactbutton:hover .norollover {
+    display:none;
+  }
+  .contactbutton:hover .rollover {
+    display:inline;
   }
 
   .photobox {
@@ -209,7 +253,7 @@ body {
     border-radius: 24px;
   }
 
-  .contact h4{
+h4 {
     text-decoration: none;
     color:#303030;
   }
@@ -250,7 +294,7 @@ body {
     .nav-links a{
       font-size: 14px;
     }
-    .contact-container {
+    .bottom-container {
       display: flex;
       flex-wrap: wrap;
       align-self: center;
@@ -259,11 +303,11 @@ body {
       margin: 30px;
     }
     
-    .contact-container a {
+    .bottom-container a {
         flex-basis: calc(50% - 20px);
     }
     
-    .contact-container a:first-child {
+    .bottom-container a:first-child {
         flex-basis: 100%;
     }
 
@@ -298,3 +342,71 @@ body {
         width: 1084px;
     }
 }
+
+
+
+
+.dochead {
+    width: 1084px;
+    height: 450px;
+    align-self: center;
+    text-align: center;
+    border-radius: 24px;
+  }
+
+#moonihead {
+    background-image: url('assets/moonihead.png');
+    background-size: cover;
+    background-position: right;
+}
+
+.challengebox {
+    width: 700px;
+    height: 437px;
+    background-color: lightcoral;
+    border-radius: 24px;
+    background-image: url('assets/challengebg.svg');
+    background-position: center;
+    background-size: cover;
+    display:flex;
+    flex-direction:column;
+    justify-content: space-between;
+  }
+
+  .specbox {
+    width: 364px;
+    height: 437px;
+    background-color: #6B6B96;
+    border-radius: 24px;
+    display:flex;
+    flex-direction:column;
+    justify-content: space-between;
+  }
+
+  .specbox h2, .specbox p {
+    color:rgba(255, 255, 255, 0.94)
+  }
+
+  .emailbutton {
+    height: 48px;
+    width: auto;
+    display: inline-flex;
+    padding-left: 54px;
+    padding-right: 54px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 24px;
+    background: #000;
+
+    text-decoration:none;
+    color: #FFF;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .emailbutton:hover {
+    background: #4a4a4a;
+  }
