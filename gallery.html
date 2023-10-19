@@ -4,8 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>mooni.ai</title>
+  <title>Gallery</title>
   <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/gh/yesiamrocks/cssanimation.io@1.0.3/cssanimation.min.css" rel="stylesheet">
   <link rel="icon" type="image/x-icon" href="/assets/icon.svg">
@@ -26,39 +27,43 @@
                 <div class="text">
                     <h1> More Projects</h1>
                 </div>
-                <div class="bottom-container">
-                    <button data-name="all" class="gallerybt" class="active">Show All</button>
-                    <button data-name="animation" class="gallerybt">Animation</button>
-                    <button data-name="coding" class="gallerybt">Coding</button>
-                    <button data-name="ui/ux" class="gallerybt">UI/UX</button>
-                    <button data-name="studioart" class="gallerybt">Studio Art</button>
+                <div class="bottom-container" id="filterbuttons">
+                    <button data-name="all" class="active">Show All</button>
+                    <button data-name="animation">Animation</button>
+                    <button data-name="coding">Coding</button>
+                    <button data-name="uiux">UI/UX</button>
+                    <button data-name="studioart">Studio Art</button>
                 </div>
             </div>
-            <div class="gallery-container">
-                <div class="gallery-item">
+            <div class="gallerycontainer">
+                <div class="galleryitem" data-name="animation">
                   <a href="#"><img src="assets/galleryitems/anisunflowers.gif" alt="Animated Sunflowers" /></a>
                 </div>
-                <div class="gallery-item">
-                    <a href="#"><img src="assets/galleryitems/anipendulum.gif" alt="Animated Pendulum with lightbulbs" /></a>
-                </div>
-                <div class="gallery-item">
+                <div class="galleryitem" data-name="coding">
                     <a href="#"> <video autoplay loop muted playsinline><source src="assets/galleryitems/codeufo.mp4" type="video/mp4"></video></a>
                 </div>
-                <div class="gallery-item">
+                <div class="galleryitem" data-name="studioart">
                     <a href="#"><img src="assets/galleryitems/artpeacock.jpg" alt="Colored pencil peacock" /></a>
                 </div>
-                <div class="gallery-item">
+                <div class="galleryitem" data-name="uiux">
+                    <a href="#"><img src="assets/galleryitems/uiuxaipal.png" alt="aipal uiux mockup" /></a>
+                </div>
+                <div class="galleryitem" data-name="studioart">
                     <a href="#"><img src="assets/galleryitems/artcanal.jpg" alt="Oilpainting fuzhou canal" /></a>
                 </div>
-                <div class="gallery-item">
+                <div class="galleryitem" data-name="animation">
+                    <a href="#"> <video autoplay loop muted playsinline><source src="assets/galleryitems/ani3drocket.mp4" type="video/mp4"></video></a>
+                </div>
+                <div class="galleryitem" data-name="studioart">
                     <a href="#"><img src="assets/galleryitems/artlady.png" alt="Colored pencil lady" /></a>
                 </div>
-                <div class="gallery-item">
-                    <a href="#"><img src="assets/galleryitems/artlady.png" alt="Colored pencil lady" /></a>
+                <div class="galleryitem" data-name="studioart">
+                    <a href="#"><img src="assets/galleryitems/artfreedom.jpg" alt="Oilpainting abstract" /></a>
                 </div>
-                <div class="gallery-item">
-                    <a href="#"><img src="assets/galleryitems/artlady.png" alt="Colored pencil lady" /></a>
+                <div class="galleryitem" data-name="animation">
+                    <a href="#"><img src="assets/galleryitems/anipendulum.gif" alt="Animated Pendulum with lightbulbs" /></a>
                 </div>
+
               </div>
         </div>
 

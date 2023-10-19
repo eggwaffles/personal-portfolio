@@ -430,7 +430,7 @@ h4 {
   justify-content: space-between;
 }
 
-.gallerybt {
+#filterbuttons button {
   height: 48px;
   width: auto;
   padding-left: 54px;
@@ -454,12 +454,12 @@ h4 {
   text-wrap: nowrap;
 }
 
-button.active {
+#filterbuttons button.active {
   background: #030303;
   color: white;
 }
 
-.gallery-container {
+.gallerycontainer {
   column-count: 3;
   column-gap: 20px;
 
@@ -467,20 +467,24 @@ button.active {
   padding: 0;
 }
 
-.gallery-item {
+.galleryitem {
   display: inline-block;
   width: 100%;
   margin: 0 0 15px;
   box-sizing: border-box;
 }
 
-.gallery-item img, .gallery-item video {
+.galleryitem img, .galleryitem video {
   width: 100%;
   height: auto;
   display: block;
 
   border-radius: 24px;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.05);
+}
+
+.galleryitem.hide {
+  display:none;
 }
 
 @media only screen and (max-width: 480px) {
@@ -502,12 +506,11 @@ button.active {
     margin: 30px;
   }
 
-  .gallery-container {
+  .gallerycontainer {
     column-count: 1;
   }
 
-  .gallery-item 
-  .gallery-item img, .gallery-item video{
+  .galleryitem img, .galleryitem video{
     border-radius: 10px;
   }
 }
@@ -517,6 +520,7 @@ button.active {
   .dochead {
     width: 532px;
   }
+
 }
 
 @media only screen and (min-width: 1220px) {
