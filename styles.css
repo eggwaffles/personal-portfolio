@@ -430,30 +430,6 @@ h4 {
   justify-content: space-between;
 }
 
-#gallery-container {
-  align-content: flex-start;
-  background-position: center;
-  background-size: cover;
-}
-
-.galleryitem {
-  width: 348px;
-  height: 348px;
-  flex-shrink: 0;
-  text-align: center;
-  border-radius: 24px;
-
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-size: 100%;
-  transition: background-size 0.5s ease;
-}
-
-.galleryitem:hover {
-  background-size: 103%;
-}
-
 .gallerybt {
   height: 48px;
   width: auto;
@@ -483,11 +459,72 @@ button.active {
   color: white;
 }
 
-#anisunflower {
-  background-image:url('assets/galleryitems/anisunflowers.gif');
+.gallery-container {
+  column-count: 3;
+  column-gap: 20px;
+
+  margin: 15px 5px;
+  padding: 0;
 }
 
-#anipendulum {
-
-  background-image:url('assets/galleryitems/anipendulum.gif');
+.gallery-item {
+  display: inline-block;
+  width: 100%;
+  margin: 0 0 15px;
+  box-sizing: border-box;
 }
+
+.gallery-item img, .gallery-item video {
+  width: 100%;
+  height: auto;
+  display: block;
+
+  border-radius: 24px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.05);
+}
+
+@media only screen and (max-width: 480px) {
+  .dochead {
+    width: 300px;
+    height: 500px;
+    background-size: cover;
+    background-position: bottom;
+    align-self: center;
+    text-align: center;
+  }
+
+  .bottom-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-self: center;
+    gap: 20px;
+    margin-top: 0;
+    margin: 30px;
+  }
+
+  .gallery-container {
+    column-count: 1;
+  }
+
+  .gallery-item 
+  .gallery-item img, .gallery-item video{
+    border-radius: 10px;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+
+  .dochead {
+    width: 532px;
+  }
+}
+
+@media only screen and (min-width: 1220px) {
+
+  .dochead {
+    width: 1084px;
+  }
+}
+
+
+
