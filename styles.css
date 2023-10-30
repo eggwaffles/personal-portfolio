@@ -22,7 +22,7 @@ h2 {
   font-family: Poppins;
   font-size: 44px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 400;
   line-height: normal;
   margin: 0px;
 }
@@ -35,6 +35,11 @@ h3 {
   font-weight: 400;
   line-height: normal;
   margin: 0px;
+}
+
+h4 {
+  text-decoration: none;
+  color: #303030;
 }
 
 p {
@@ -255,11 +260,6 @@ p {
   border-radius: 24px;
 }
 
-h4 {
-  text-decoration: none;
-  color: #303030;
-}
-
 
 @media only screen and (max-width: 480px) {
   .introbox {
@@ -365,7 +365,7 @@ h4 {
 }
 
 #moonihead {
-  background-image: url('assets/moonihead.png');
+  background-image: url('assets/moonidocitems/moonihead.png');
   background-size: cover;
   background-position: right;
 }
@@ -375,12 +375,37 @@ h4 {
   height: 437px;
   background-color: lightcoral;
   border-radius: 24px;
-  background-image: url('assets/challengebg.svg');
+  background-image: url('assets/moonidocitems/challengebg.svg');
   background-position: center;
   background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+#moonidocbutton {
+  height: 48px;
+  width: auto;
+  display: inline-flex;
+  padding-left: 54px;
+  padding-right: 54px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border-radius: 24px;
+  background: #585880;
+
+  text-decoration: none;
+  color: #FFF;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+#moonidocbutton:hover {
+  background: #E5E5F1;
+  color:#303030
 }
 
 .specbox {
@@ -398,28 +423,73 @@ h4 {
   color: rgba(255, 255, 255, 0.94)
 }
 
-.emailbutton {
-  height: 48px;
-  width: auto;
-  display: inline-flex;
-  padding-left: 54px;
-  padding-right: 54px;
-  align-items: center;
+.demo {
+  display: flex;
+  width: 598px;
+  height: 572px;
   justify-content: center;
-  gap: 10px;
-  border-radius: 24px;
-  background: #000;
-
-  text-decoration: none;
-  color: #FFF;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
+  align-items: flex-start;
+  gap: 20px;
+  flex-shrink: 0;
 }
 
-.emailbutton:hover {
-  background: #4a4a4a;
+.demoimg {
+  width: 289px;
+  height: 572px;
+  flex-shrink: 0;
+  padding:0%;
+  border-radius: 48px;
+}
+
+.contextbox {
+  width: 466px;
+  height: 575px;
+  flex-shrink: 0;
+  border-radius: 24px;
+  background: #FBFAF6;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.fullbox {
+  width: 1084px;
+  height: auto;
+  align-self: center;
+  text-align: center;
+  border-radius: 24px;
+}
+
+#moonifullbox {
+  background-image: url('assets/moonidocitems/challengebg.svg');
+  background-size: cover;
+  background-position: right;
+}
+
+#twocolumns {
+  padding-top: 0px;
+  padding-bottom: 58px;
+  width:90%;
+  display: flex;
+  align-items: flex-start;
+  align-content: center;
+  gap: 50px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 17px;
+}
+
+.column li {
+  color: #303030;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
 }
 
 #galleryhead {
