@@ -90,6 +90,8 @@ p {
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
+  opacity: 0;
+  animation: fadeIn 1s forwards 2s;
 }
 
 .container {
@@ -362,12 +364,28 @@ p {
   align-self: center;
   text-align: center;
   border-radius: 24px;
+  background-size: cover;
+  background-position: right;
 }
 
 #moonihead {
   background-image: url('assets/moonidocitems/moonihead.png');
-  background-size: cover;
-  background-position: right;
+}
+
+#sshead {
+  background-image: url('assets/ssdocitems/sshead.png');
+}
+
+#sclhead {
+  background-image: url('assets/matchadocitems/sclhead.png');
+}
+
+#ratahead {
+  background-image: url('assets/ratatouilledocitems/ratahead.png')
+}
+
+#venmohead {
+  background-image: url('assets/venmodocitems/venmohead.png')
 }
 
 .challengebox {
@@ -375,12 +393,31 @@ p {
   height: 437px;
   background-color: lightcoral;
   border-radius: 24px;
-  background-image: url('assets/moonidocitems/challengebg.svg');
-  background-position: center;
-  background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  background-position: center;
+  background-size: cover;
+}
+
+#moonichallenge {
+  background-image: url('assets/moonidocitems/challengebg.svg');
+}
+
+#sschallenge {
+  background-image: url('assets/ssdocitems/sschallengebg.svg');
+}
+
+#sclchallenge {
+  background-image: url('assets/matchadocitems/sclchallengebg.png');
+}
+
+#ratachallenge {
+  background-image: url('assets/ratatouilledocitems/ratachallengebg.png')
+}
+
+#venmochallenge {
+  background-image: url('assets/venmodocitems/venmochallengebg.png')
 }
 
 #moonidocbutton {
@@ -411,7 +448,6 @@ p {
 .specbox {
   width: 364px;
   height: 437px;
-  background-color: #6B6B96;
   border-radius: 24px;
   display: flex;
   flex-direction: column;
@@ -421,6 +457,26 @@ p {
 .specbox h2,
 .specbox p {
   color: rgba(255, 255, 255, 0.94)
+}
+
+#moonispecs {
+  background-color: #6B6B96;
+}
+
+#ssspecs {
+  background-color: #488468;
+}
+
+#sclspecs {
+  background-color: #296473;
+}
+
+#rataspecs {
+  background-color: #944747;
+}
+
+#venmospecs {
+  background-color: #5B7DA0;
 }
 
 .demo {
@@ -450,6 +506,28 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+.vddemo {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.vddemo img {
+  width: 230px;
+  height: 499px;
+  border: 1px solid #6B6B96;
+  border-radius: 24px;
+}
+
+#vdbox {
+  display:flex;
+  width: 581px;
+  height: 499px;
+  flex-shrink: 0;
+  border-radius: 24px;
+  background-color: #FBFAF6;
 }
 
 .fullbox {
@@ -492,18 +570,32 @@ p {
   line-height: normal;
 }
 
-#mooniideation {
+.moonidarkbg {
   background-color: #6B6B96;
 }
 
-#mooniideation h2, #mooniideation p {
+.moonidarkbg h2, .moonidarkbg p {
   color: #F6F6F9;
 }
 
-#mooniideation img {
+.moonidarkbg img {
   padding-bottom: 58px;
   justify-self: center;
-  border-radius: 24px;
+}
+
+#threecolumns {
+  padding-top: 0px;
+  width:90%;
+  display: flex;
+  align-items: flex-start;
+  gap: 37px;
+}
+
+#threecolumns .text {
+  width: 30%;
+}
+#threecolumns img {
+  padding-top:58px;
 }
 
 #galleryhead {
