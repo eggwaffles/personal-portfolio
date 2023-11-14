@@ -51,6 +51,15 @@ p {
   line-height: normal;
 }
 
+li {
+  color: #303030;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -358,6 +367,49 @@ p {
   }
 }
 
+.doctitle {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  align-items: center;
+  padding-top: 25px;
+}
+
+.doctitle p {
+  align-self: center;
+  text-align: center;
+}
+
+.titletag {
+  display: inline-block;
+  width: fit-content;
+  padding: 4px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 7px;
+
+  color: #000;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+}
+
+#pdtag {
+  background: #E5E5F1;
+}
+
+#codetag {
+  background: #c4ecdf;
+}
+
+#graphicdesigntag {
+  background: #ffedff;
+}
+
 .dochead {
   width: 1084px;
   height: 450px;
@@ -388,6 +440,45 @@ p {
   background-image: url('assets/venmodocitems/venmohead.png')
 }
 
+.doctextcontainer {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  align-items: flex-start;
+  width: 70%;
+}
+
+.doctextcontainer h2, .doctextcontainer h3 {
+  padding-top: 25px;
+}
+
+.doctextcontainer img {
+  width: 70%;
+  align-self: center;
+}
+
+.tldr {
+  gap:0;
+  padding-bottom: 15px;
+}
+
+.tldr p{
+  margin:15px;
+}
+
+.thankyou {
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  align-self: center;
+  align-items: center;
+  padding-top: 40px;
+}
+
+.thankyou h3 {
+  opacity: 70%;
+}
+
 .challengebox {
   width: 700px;
   height: 437px;
@@ -399,28 +490,7 @@ p {
   background-size: cover;
 }
 
-#moonichallenge {
-  background-image: url('assets/moonidocitems/challengebg.svg');
-}
-
-#sschallenge {
-  background-image: url('assets/ssdocitems/sschallengebg.png');
-  
-}
-
-#sclchallenge {
-  background-image: url('assets/matchadocitems/sclchallengebg.png');
-}
-
-#ratachallenge {
-  background-image: url('assets/ratatouilledocitems/ratachallengebg.png')
-}
-
-#venmochallenge {
-  background-image: url('assets/venmodocitems/venmochallengebg.png')
-}
-
-#moonidocbutton {
+#docbutton {
   height: 48px;
   width: auto;
   display: inline-flex;
@@ -430,7 +500,7 @@ p {
   justify-content: center;
   gap: 10px;
   border-radius: 24px;
-  background: #585880;
+  background: #303030;
 
   text-decoration: none;
   color: #FFF;
@@ -440,229 +510,28 @@ p {
   line-height: normal;
 }
 
-#moonidocbutton:hover {
-  background: #E5E5F1;
-  color:#303030
-}
-
-#ratadocbutton {
-  height: 48px;
-  width: auto;
-  display: inline-flex;
-  padding-left: 54px;
-  padding-right: 54px;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  border-radius: 24px;
-  background: #944747;
-
-  text-decoration: none;
-  color: #FFF;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-}
-
-#ratadocbutton:hover {
-  background: #ffffff;
-  color:#944747;
-}
-
-#ratasecondarybutton {
-  height: 48px;
-  width: auto;
-  display: inline-flex;
-  padding-left: 54px;
-  padding-right: 54px;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  border-radius: 24px;
-  background: #E8C6C6;
-
-  text-decoration: none;
-  color: #944747;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-}
-
-#ratasecondarybutton:hover {
-  background: #ffffff;
-  color:#944747;
-}
-
-.specbox {
-  width: 364px;
-  height: 437px;
-  border-radius: 24px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.specbox h2,
-.specbox p {
-  color: rgba(255, 255, 255, 0.94)
-}
-
-#moonispecs {
-  background-color: #6B6B96;
-}
-
-#ssspecs {
-  background-color: #488468;
-}
-
-#sclspecs {
-  background-color: #296473;
-}
-
-#rataspecs {
-  background-color: #944747;
-}
-
-#venmospecs {
-  background-color: #5B7DA0;
+#docbutton:hover {
+  background: #4a4a4a;;
+  color: white;
 }
 
 .demo {
   display: flex;
   width: 598px;
   height: 572px;
+  align-self: center;
   justify-content: center;
   align-items: flex-start;
+  padding-top: 30px;
   gap: 20px;
   flex-shrink: 0;
-}
-
-#ratademo {
-  height: 300px;
 }
 
 .demoimg {
-  width: 289px;
-  height: 572px;
-  flex-shrink: 0;
-  padding:0%;
+  width: 270px;
+  height: 574px;
+  object-fit: cover;
   border-radius: 48px;
-}
-
-.ratademoimg {
-  width: auto;
-  height: 300px;
-  flex-shrink: 0;
-  padding:0%;
-  border-radius: 48px;
-}
-
-.contextbox {
-  width: 466px;
-  height: 575px;
-  flex-shrink: 0;
-  border-radius: 24px;
-  background: #FBFAF6;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-#ratacontext {
-  height: 300px;
-  background: #EEF1F3;
-}
-
-.vddemo {
-  display: flex;
-  align-items: flex-start;
-  gap: 20px;
-}
-
-.vddemo img {
-  width: 230px;
-  height: 499px;
-  border: 1px solid #6B6B96;
-  border-radius: 24px;
-}
-
-#vdbox {
-  display:flex;
-  width: 581px;
-  height: 499px;
-  flex-shrink: 0;
-  border-radius: 24px;
-  background-color: #FBFAF6;
-}
-
-.fullbox {
-  width: 1084px;
-  height: auto;
-  align-self: center;
-  text-align: center;
-  border-radius: 24px;
-}
-
-#mooniresearch {
-  background-image: url('assets/moonidocitems/challengebg.svg');
-  background-size: cover;
-  background-position: right;
-}
-
-#twocolumns {
-  padding-top: 0px;
-  padding-bottom: 58px;
-  width:90%;
-  display: flex;
-  align-items: flex-start;
-  align-content: center;
-  gap: 50px;
-}
-
-.column {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 17px;
-}
-
-.column li {
-  color: #303030;
-  font-family: Poppins;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 300;
-  line-height: normal;
-}
-
-.moonidarkbg {
-  background-color: #6B6B96;
-}
-
-.moonidarkbg h2, .moonidarkbg p {
-  color: #F6F6F9;
-}
-
-.moonidarkbg img {
-  padding-bottom: 58px;
-  justify-self: center;
-}
-
-#threecolumns {
-  padding-top: 0px;
-  width:90%;
-  display: flex;
-  align-items: flex-start;
-  gap: 37px;
-}
-
-#threecolumns .text {
-  width: 30%;
-}
-#threecolumns img {
-  padding-top:58px;
 }
 
 #galleryhead {
@@ -705,30 +574,57 @@ p {
 .gallerycontainer {
   column-count: 3;
   column-gap: 20px;
-
   margin: 15px 5px;
   padding: 0;
 }
 
 .galleryitem {
+  position: relative;
   display: inline-block;
   width: 100%;
   margin: 0 0 15px;
   box-sizing: border-box;
 }
 
-.galleryitem img, .galleryitem video {
+.gallery-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.8);
+  color: #030303;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 24px;
+}
+
+.galleryitem:hover .gallery-overlay {
+  opacity: 1;
+}
+
+.gallery-overlay p {
+  margin: 0;
+  font-size: 16px;
+  text-align: center;
+}
+
+.galleryitem img,
+.galleryitem video {
   width: 100%;
   height: auto;
   display: block;
-
   border-radius: 24px;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.05);
 }
 
 .galleryitem.hide {
-  display:none;
+  display: none;
 }
+
 
 @media only screen and (max-width: 480px) {
   .dochead {
@@ -738,15 +634,6 @@ p {
     background-position: bottom;
     align-self: center;
     text-align: center;
-  }
-
-  .bottom-container {
-    display: flex;
-    flex-wrap: wrap;
-    align-self: center;
-    gap: 20px;
-    margin-top: 0;
-    margin: 30px;
   }
 
   .gallerycontainer {

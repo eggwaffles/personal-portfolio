@@ -21,68 +21,42 @@
           <a href="index.html#contact" id="contactnav">Contact</a>
         </div>
     </nav>
-        <div id="documentation" class="box-container">
-            <div class="dochead" id="ratahead">
-                <div class="text">
-                    <h1>Ratatouille</h1>
-                    <p> A mini RPG based on Ratatouille</p>
-                </div>
-            </div>
-            <div class="challengebox" id="ratachallenge">
-                <div class="text">
-                    <h2>TL,DR</h2>
-                    <p>How might we retell ratatouille in a more interactive medium?</p>
-                </div>
-                <div class="bottom-container">
-                    <a href="https://game.alinazeng.art/" id="ratadocbutton"> Play the Game </a>
-                    <a href="https://github.com/eggwaffles/ratatouille_game" id="ratasecondarybutton"> See the Code</a>
-                </div>
-            </div>
-            <div class="specbox" id="rataspecs">
-                <div class="text">
-                    <h2>Specs</h2>
-                    <p> Date: Apr - May 2023</p>
-                    <p> Skill: Game Design, Development</p>
-                    <p> Tools: React.js, Phaser 3, Piskel</p>
-                </div>
-            </div>
-            <div class="demo" id="ratademo">
-                <image src="assets/ratatouilledocitems/ratasprite.png" class="ratademoimg"></image>
-                <image src="assets/ratatouilledocitems/ratasprite2.png" class="ratademoimg"></image>
-            </div>
-            <div class="contextbox" id="ratacontext">
-                <div class="text">
-                    <h2>Context</h2>
-                    <p>This game, which was created for a Communications Lab final project, is a retelling of Disney's classic movie, Ratatouille, in a game format.</p>
-                </div>
-            </div>
-            <div class="fullbox" style="background-color: #944747; padding-bottom: 5.5%;">
-                <div class="text">
-                    <h2 style = "color: #FFF;">Player Narrative</h2>
-                    <p style = "color: #FFF;">The narrative is inspired based off the climatic scene in Ratatouille, where Ego, a tough food critic, visits Linguini’s restaurant. You play as Remy, who is puppeteering the chef Linguini. In the scene, Ego arrives and orders “perspective,” which is meant to confuse the player as Linguini was confused in the moment. The player is allowed to ask two clarifying questions before Ego stops answering, although his answers are brief and unhelpful. When the player enters the kitchen, Remy provides some helpful instructions telling the player to grab prepared food from the refrigerator and cook it on a stove. The player can take the food off the stove at any time and give it to Ego to judge — you don’t know whether he will enjoy food or not.</p>
-                </div>
-            </div>
-            <div class="fullbox" style="background-color: #EEF1F3; padding-bottom: 5.5%;">
-                <div class="text">
-                    <h2>Animations + Interactions</h2>
-                    <div id="twocolumns" style="width: 120%; padding-bottom: 0%;">
-                        <div class="column"><p>Each player animation was created by pulling from frames on the sprite sheet and adding them to an JavaScript object.</p>
-                            <img src="/assets/ratatouilledocitems/ani1.gif" style="width: 60%;">
-                        </div>
-                        <div class="column"><p>Interactions such as picking up food and serving affects global variables so the changes carry over across different scenes</p>
-                            <img src="/assets/ratatouilledocitems/ani2.gif" style="width: 90%;">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="fullbox" style="background-color: #EEF1F3; padding-bottom: 5.5%;">
-                <div class="text">
-                    <h2>Possible Next Steps</h2>
-                    <p style="margin-bottom: 0%;">• Sound Design! Sizzle noises for cooking, walking sound effects, and placing plates sounds.</p>
-                    <p style="margin-top: 0%;">• More interactivity: Rather than only having the player heat up the food, adding more actions to the game such as chopping and plating such as Cooking Mama or Overcooked.</p>
-                </div>
-            </div>
+        <div class="doctitle">
+            <h2>Ratatouille</h2>
+            <p>A mini RPG based on Ratatouille</p>
+            <div class="titletag" id="codetag">coding</div>
         </div>
+            <div class="dochead" id="ratahead"></div>
+            <div class="doctextcontainer">
+                <h2>TL,DR</h2>
+                <div class="tldr">
+                    <p><b>Challenge:</b>How might we retell ratatouille in a more interactive medium?</p>
+                    <p> <b>Date:</b> Apr - May 2023</p>
+                    <p> <b>Skill:</b> Game Design, Development</p>
+                    <p> <b>Tools:</b> React.js, Phaser 3, Piskel</p>
+                </div>
+                <div style="display:flex; flex-direction:row; gap:15px;">
+                    <a href="https://game.alinazeng.art/" id="docbutton"> Play the Game </a>
+                    <a href="https://github.com/eggwaffles/ratatouille_game" id="docbutton"> See the Code</a>
+                </div>
+                <h2>Context</h2>
+                <p>This game, which was created for a Communications Lab final project, is a retelling of Disney's classic movie, Ratatouille, in an RPG game format. This project is inspired by classic RPG cooking games such as Cooking Mama, Overcooked, and Plate Up.</p>
+                <div class="demo" style="height:300px; width:auto;">
+                    <image src="assets/ratatouilledocitems/ratasprite.png" style="height:300px; width:auto;"></image>
+                    <image src="assets/ratatouilledocitems/ratasprite2.png" style="height:300px; width:auto;"></image>
+                </div>
+                <h2>Player Narrative</h2>
+                <p>The narrative is inspired based off the climatic scene in Ratatouille, where Ego, a tough food critic, visits Linguini’s restaurant. You play as Remy, who is puppeteering the chef Linguini. In the scene, Ego arrives and orders “perspective,” which is meant to confuse the player as Linguini was confused in the moment. The player is allowed to ask two clarifying questions before Ego stops answering, although his answers are brief and unhelpful. When the player enters the kitchen, Remy provides some helpful instructions telling the player to grab prepared food from the refrigerator and cook it on a stove. The player can take the food off the stove at any time and give it to Ego to judge — you don’t know whether he will enjoy food or not.</p>
+                <h2>Animations + Interactions</h2>
+                <p>Each player animation was created by pulling from frames on the sprite sheet and adding them to an JavaScript object. Interactions such as picking up food and serving affects global variables so the changes carry over across different scenes.</p>
+                <div class="demo" style="width: 100%; height: auto;">
+                    <img src="/assets/ratatouilledocitems/ani1.gif" style="width: 30%;">
+                    <img src="/assets/ratatouilledocitems/ani2.gif" style="width: 60%;">
+                </div>
+                <h2>Possible Next Steps</h2>
+                <p style="margin-bottom: 0%;">• Sound Design! Sizzle noises for cooking, walking sound effects, and placing plates sounds.</p>
+                <p style="margin-top: 0%;">• More interactivity: Rather than only having the player heat up the food, adding more actions to the game such as chopping and plating such as Cooking Mama or Overcooked.</p>
+            </div>
         <nav class="navbar">
             <img src="assets/icon.svg" alt="Logo" class="logo">
             <div class="nav-links">
