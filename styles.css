@@ -244,8 +244,8 @@ li {
   background-image: url('assets/portfolioitems/chachamatcha.png');
 }
 
-#venmo {
-  background-image: url('assets/portfolioitems/venmocasestudy.png');
+#oadish {
+  background-image: url('assets/portfolioitems/oadish.png');
 }
 
 #ratatouille {
@@ -436,8 +436,8 @@ li {
   background-image: url('assets/ratatouilledocitems/ratahead.png')
 }
 
-#venmohead {
-  background-image: url('assets/venmodocitems/venmohead.png')
+#oadishhead {
+  background-image: url('assets/oadishdocitems/oadishbg.png')
 }
 
 .doctextcontainer {
@@ -464,6 +464,15 @@ li {
 
 .tldr p{
   margin:15px;
+}
+
+.twocolumns {
+  display: flex;
+  gap: 45px;
+}
+
+.column {
+  flex:1;
 }
 
 .thankyou {
@@ -627,11 +636,28 @@ li {
 
 
 @media only screen and (max-width: 480px) {
+  
+  p, li {
+    font-size: smaller;
+  }
+
+  h3 {
+    font-size: medium;
+  }
+
+  h2 {
+    font-size: larger;
+  }
+
+  .twocolumns {
+    flex-direction: column;
+  }
+  
   .dochead {
     width: 300px;
-    height: 500px;
+    height: 200px;
     background-size: cover;
-    background-position: bottom;
+    background-position: right;
     align-self: center;
     text-align: center;
   }

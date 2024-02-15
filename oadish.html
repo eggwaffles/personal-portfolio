@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OADish</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/gh/yesiamrocks/cssanimation.io@1.0.3/cssanimation.min.css" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="/assets/icon.svg">
+</head>
+
+<body>
+  <div class="container">
+    <nav class="navbar">
+        <img src="assets/icon.svg" alt="Logo" class="logo">
+        <div class="nav-links">
+          <a href="index.html" id="homenav">Home</a>
+          <a href="index.html#projects" id="projectsnav">Projects</a>
+          <a href="index.html#contact" id="contactnav">Contact</a>
+        </div>
+    </nav>
+    <div class="doctitle">
+        <h2>OADish</h2>
+        <p>Designing and prototyping a dishrack</p>
+        <div class="titletag" id="pdtag">product design</div>
+    </div>
+    <div class="dochead" id="oadishhead"></div>
+    <div class="doctextcontainer">
+        <h2>TL,DR</h2>
+        <div class="tldr">
+            <p><b>Challenge:</b> How might we redesign the dishrack with sustainability and usability in mind?</p>
+            <p> <b>Date:</b> Oct - Dec 2023</p>
+            <p> <b>Skill:</b> UX Research, Ideation, Prototyping</p>
+            <p> <b>Tools:</b> Adobe Illustrator, Fusion 360, Figma</p>
+        </div>
+        <a href="assets/oadishdocitems/oadishrecipebook.pdf" target="_blank" id="docbutton">Read the Recipe Book</a>
+        <img src="assets/oadishdocitems/oadishdemo.png" style="width: 100%; padding-top: 30px;">
+        <h2>Context</h2>
+        <p>This project was for a Product Design Studio class, where I worked with 3 other team members with the goal to redesign any household item. We created a modular dishrack featuring a stainless steel rack over diatomaceous earth mats.</p>
+        <h2>Research</h2>
+        <h3>User Research</h3>
+        <p>We started off by conducting user interviews, asking questions about their kitchen environment, dishwashing habits, and experience using their dishrack.</p>
+        <ul>
+          <li>“plates fall over easily in the rack because the <span style="color:#BF0000; font-weight:400;">bars are too shallow</span> ... glasses and bowls are unstable as <span style="color:#BF0000; font-weight:400;">the bars are too far apart.</span>”</li>
+          <li>“the drainer gets enough water in it that it <span style="color:#BF0000; font-weight:400;">gets pretty gross at the bottom</span> on a regular basis. I have since ditched it and purchased another dish drainer <span style="color:#37A835; font-weight:400;">hangs off the edge of the sink</span> and counter area.”</li>
+          <li>“My current dish rack is super cheap and bad but the one my parents had at home has held up for years and has a <span style="color:#37A835; font-weight:400;">removable drain tray so its easy to clean.</span>”</li>
+          <li>“it's <span style="color:#BF0000; font-weight:400;">too small and it can't fit pots and pans</span>. We usually use our dishwasher for smaller items so we only really use the dish rack for occasional dishes and pots and pans and they’re just stacked in there awkwardly”</li>
+          <li>“I don’t like the idea of having it on my counter all the time...back in my dorm it <span style="color:#BF0000; font-weight:400;">took up all my counter space and it was too big to move anywhere else </span> it was so annoying"</li>
+        </ul>
+        <img src="assets/oadishdocitems/mapping.png" style="width: 100%; padding-top: 30px;">
+        <p>Then we mapped a few of the main concerns to synthesize our interview responses and we found that our goal for this dishrack would be to maximize the usable space inside the dishrack and minimize the space the dishrack takes up on the counter, while creating a design that seamlessly blends with users' kitchens.</p>
+        <h3>User Assumptions</h3>
+        <p>Instead of creating a user persona, we created a list of user assumptions in order to narrow our use cases.</p>
+        <ul>
+          <li>Uses reusable dishware</li>
+          <li>Likes clean dishes</li>
+          <li>Doesn't have a dishwasher, or uses both dishrack and dishwasher</li>
+          <li>Uses dishrack in a home kitchen, lives in a household of 1-4</li>
+        </ul>
+        <h3>User Journey</h3>
+        <p>We created a journey map of a typical user cooking a small meal, focusing on how the dishrack impacts the overall kitchen experience.</p>
+        <img src="assets/oadishdocitems/journey mapping 1.png" style="width:100%; padding-top: 30px;">
+        <p>We noticed that while the dishrack is only directly interacted with during the cleaning phase of the meal, since dishracks are often a permanent fixture on kitchen counters, the amount of space the dishrack takes up next to the sink impacts the cooking experience as well, moreso in smaller kitchens than larger ones.</p>
+        <h3>What would we consider to be the most ideal dishrack?</h3>
+        <p>We synthesized our findings to create our goal for the design process:</p>
+        <ul>
+          <li><b>takes up no counter or sink space</b>
+            <ul>
+              <li>takes up minimal counter space</li>
+              <li>easy to put away when you aren’t using it</li>
+            </ul>
+          </li>
+          <li><b>holds everything you need of all shapes and sizes</b>
+            <ul>
+              <li>perfectly measured bars to accommodate most standard dish shapes and sizes</li>
+              <li>could be double layered to use vertical space to hold more dishes</li>
+            </ul>
+          </li>
+          <li><b>never gets dirty</b>
+            <ul>
+              <li>made of antibacterial and antimicrobial materials</li>
+              <li>drains the water properly to avoid grime buildup</li>
+              <li>easy to clean</li>
+            </ul>
+          </li>
+          <li><b>blends in with your space seamlessly</b>
+            <ul>
+              <li>material design that fits with standard kitchen materials</li>
+              <li>different colorways to subvert expectations and create a more fun product</li>
+            </ul>
+          </li>
+        </ul>
+        <h2>Ideation</h2>
+        <h3>Rapid Prototyping</h3>
+        <p>Each group member sketched 9 dishrack prototypes just to get ideas out. Then we solicited feedback from our peers in the class to figure out what they liked and disliked from each design.</p>
+        <img src="assets/oadishdocitems/rapid prototyping.png" style="width:100%; padding-top: 30px;">
+        <h3>Co-creation</h3>
+        <p>We conducted 4 co-creation sessions with users and asked them to describe and draw their ideal dishrack and found that the participants liked having dishracks which can go into the sink, making dishes easier to wash. They also stressed the need for better bar design for the inside of the dishrack, since many of them struggled with fitting various sized dishes in their dishrack.</p>
+        <img src="assets/oadishdocitems/cocreation.png" style="width:100%; padding-top: 30px;">
+        <h3>Narrowing down ideas</h3>
+        <p>Taking feedback, we narrowed down on a few ideas to flesh out more before we move to prototyping</p>
+        <img src="assets/oadishdocitems/sketches.png" style="width:100%; padding-top: 30px;">
+        <h3>Concept Testing</h3>
+        <p>We conducted concept testing with participants to decide between our two main ideas:</p>
+        <div class="twocolumns">
+          <div class="column">
+            <p><b>Two tiered design with plant drainage</b></p>
+            <p>This design focuses on maximizing vertical space with an innovative drainage solution. The upper level of the dishrack is a removable wire bin which can be placed over the sink. The bottom layer uses removable potted plants to catch the water that drains off the dishes, allowing for users to water their plants easily.</p>
+            <hr>
+            <p style="font-weight: 500;">What participants liked about this idea</p>
+            <ul>
+              <li>there was enough space on the dishrack for everything</li>
+              <li>the plants were a unique touch for preventing water from being wasted down a drain</li>
+              <li>you could take out the dish bin from the top layer and put it in the sink</li>
+            </ul>
+            <p style="font-weight: 500;">What participants didn't like about this idea</p>
+            <ul>
+              <li>takes up too much space on the counter</li>
+              <li>it looked too heavy</li>
+              <li>concerned about root rot in plants and also plants not getting enough water, or dirty water</li>
+            </ul>
+          </div>
+          <div class="column">
+            <p><b>Modular rack over dishmat design</b></p>
+            <p>This design incorporates a small dishrack placed on top of an absorbent mat as the drainage system. More mats or racks can be added to the design depending on the user's needs, and this design allows for easy cleaning (mats are machine washer safe and antimicrobial to prevent molding) and can be put away when not in use.</p>
+            <hr>
+            <p style="font-weight: 500;">What participants liked about this idea</p>
+            <ul>
+              <li>the dishmat was washable</li>
+              <li>it was easy to store since it was smaller and you could use what you need</li>
+              <li>space for pots and pans on the mat</li>
+              <li>the rack could be placed on the sink</li>
+            </ul>
+            <p style="font-weight: 500;">What participants didn't like about this idea</p>
+            <ul>
+              <li>you had to wash the dishmat</li>
+              <li>the actual rack part seemed a bit small</li>
+            </ul>
+          </div>
+        </div>
+        <p>We ended up choosing to explore the second option for our final prototype  since the second option is closer to our ideal version of a dishrack because of its compactness and flexibility. The only downsides what we would need to find solutions for is finding an antimicrobial and absorbent material for the dishmat.</p>
+      <h2>Prototyping</h2>
+      <h3>Prototype 1</h3>
+      <p>Our first prototype focused on a simple rack design with grooves to hold the plates. But during our usability test for this design, we found that bowls would often fall over because of the shape, size, and angle of each groove. Additionally, during a feedback session, we found that a majority of people preferred to have more flexibility with dish storage as opposed to specific organization.</p>
+      <img src="assets/oadishdocitems/prototype1.png" style="width:70%; padding-top: 30px;">
+      <p>Additionally at this point, we found a solution to the cleanliness problem which came up during concept testing. Diatomaceous earth, which is essentially a stone slab, has antimicrobial properties because of its porous physical structure which allows water to dry in less than 3 seconds. This has previously been popular in bathmats but can also will be used as a water drainage solution for our dishrack.</p>
+      <h3>Iterating to the last prototype</h3>
+      <p>Our final few prototypes were all created with a laser cutter with an Adobe Illustrator design, focusing on experimenting with different mat, dishrack, and utensil box sizes. From these iterations, we learned:</p>
+      <ul>
+        <li>Splitting the stone dishmat into manageable attacheable sections adds to the modularity of the product</li>
+        <li>The stone slab needs a silicone covering to protect dishes from potential scratches</li>
+        <li>A detachable utensil box makes the dishrack easier to store</li>
+        <li>The slots on the utensil box should match up with the steel bars so the utensil box can be placed flat onto the rack</li>
+        <li>Each steel bar requires a silicone tip to non-slip the dishrack and prevent any unnecessary loud noises</li>
+      </ul>
+      <img src="assets/oadishdocitems/finalprototypeusability.png" style="width:100%; padding-top:30px;">
+      <p>After finalizing our wood prototype, we created a recipe book planning what the product needs to come to life from manufacturing to material sourcing to packaging to creating an end-of-life plan/a continuation of life plan. In line with the affordances of modularity in our product, we plan to extend the life plan of the product for as long as possible by replacing parts that need a refresh, allowing the user to purchase a new part at a discount in return for sustainably disposing of the used parts. </p>
+      <a href="assets/oadishdocitems/oadishrecipebook.pdf" target="_blank" id="docbutton">Read the Recipe Book</a>
+      <div class="thankyou">
+        <img src="assets/tyturtle.png">
+        <h3>Thank you for reading!</h3>
+      </div>
+    </div>
+        <nav class="navbar">
+            <img src="assets/icon.svg" alt="Logo" class="logo">
+            <div class="nav-links">
+              <a href="index.html" id="homenav">Back to Home ></a>
+              <a href="index.html#contact" id="contactnav">Contact ></a>
+            </div>
+        </nav>
+    </div>
+</body>
+
+</html>
